@@ -16,10 +16,11 @@ html {
   display: flex;
   flex-direction: column;
   font-family: sans-serif;
+  font-size: 16px;
 }
 
 #nav-logo {
-  width: 300px;
+  width: 200px;
 }
 
 nav {
@@ -41,12 +42,13 @@ ul {
   display: flex;
   align-items: center;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 li {
   padding: 10px;
   color: #1a1a1a;
-  font-size: 25px;
+  font-size: 1.2rem;
 }
 
 /* First section properties */
@@ -70,21 +72,21 @@ li {
 h1 {
   margin: 0 auto;
   text-align: center;
-  font-size: 70px;
-  font-weight: bolder;
+  font-size: 3.5rem;
   padding-bottom: 25px;
 }
 
 .landing > p {
-  font-size: 20px;
+  font-size: 1em;
   width: 50%;
   color: white;
+  font-weight: 100;
 }
 
 /* middle section */
 
 .middle {
-  margin-top: 55px;
+  margin-top: 1.5rem;
 }
 
 .boxes-container {
@@ -92,6 +94,7 @@ h1 {
   color: black;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .title {
   display: flex;
@@ -99,11 +102,11 @@ h1 {
 }
 .title h2 {
   color: black;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
   text-align: center;
   margin-top: 30px;
   border-bottom: 5px solid #00b172;
-  font-size: 35px;
+  font-size: 1.5rem;
   font-weight: bold;
   display: inline-block;
   padding-bottom: 10px;
@@ -114,26 +117,24 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   text-align: center;
-  width: 30%;
   height: 60vh;
 }
 div > h3 {
   margin: 35px 0;
-  font-size: 35px;
+  font-size: 1.5rem;
   color: #00b172;
 }
 
 .boxes-container p {
-  font-size: 25px;
+  font-size: 1rem;
   width: 55%;
 }
 
 /* last section */
 
 .last-section {
-  margin-top: 120px;
+  margin-top: 2rem;
 }
 #icon {
   width: 170px;
@@ -142,19 +143,19 @@ div > h3 {
 .yeezy-container {
   background-color: #00b172;
 
-  padding: 100px;
+  padding: 5rem;
   color: white;
 }
 
 .yeezy-title {
   color: white;
-  font-size: 30px;
+  font-size: 1.5rem;
   border-bottom: 4px solid white;
   display: inline-block;
 }
 .yeezy-container h3 {
   color: white;
-  font-size: 15px;
+  font-size: 2rem;
 }
 .row {
   display: flex;
@@ -165,6 +166,7 @@ div > h3 {
 .col {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 #app {
@@ -179,11 +181,36 @@ div > h3 {
   width: 100%;
 }
 
-.box h3 {
-  font-size: 35px;
+.box p {
+  font-size: 1.2rem;
+  width: 80%;
 }
 
-.box p {
-  font-size: 20px;
-  width: 80%;
+@media screen and (max-width: 700px) {
+  #nav-logo {
+    width: 8rem;
+    height: 3rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+
+  .row {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .box p {
+    width: 100%;
+  }
+
+  .yeezy-container h2 {
+    text-align: center;
+  }
+
+  #white-icon {
+    width: 8rem;
+    margin: 2rem;
+  }
 }
